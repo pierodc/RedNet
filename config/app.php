@@ -52,9 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
-
-    'asset_url' => env('ASSET_URL', null),
+    'url' => env('APP_URL', 'http://www.redcolegial.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -97,19 +95,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Faker Locale
-    |--------------------------------------------------------------------------
-    |
-    | This locale will be used by the Faker PHP library when generating fake
-    | data for your database seeds. For example, this will be used to get
-    | localized telephone numbers, street address information and more.
-    |
-    */
-
-    'faker_locale' => 'en_US',
-
-    /*
-    |--------------------------------------------------------------------------
     | Encryption Key
     |--------------------------------------------------------------------------
     |
@@ -119,7 +104,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY','crk5m2fkdsrgct5fxx5qjmgiuayk6bty'),
 
     'cipher' => 'AES-256-CBC',
 

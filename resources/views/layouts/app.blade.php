@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title','Colegio SFA')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -76,5 +76,12 @@
             @yield('content')
         </main>
     </div>
+    <ul>
+        <li><a href="/public/">Home</a></li>
+        <li><a href="/public/about">About</a></li>
+        <li><a href="/public/contact">Contact</a></li>
+    </ul>
+
+
 </body>
 </html>
