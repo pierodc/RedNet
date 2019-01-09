@@ -72,15 +72,17 @@
             </div>
         </nav>
 
+	<ul>
+        <li><a href="{{ route('Home') }}">Home</a></li>
+        <li><a href="{{ route('About') }}">About</a></li>
+        <li><a href="{{ route('Contact') }}">Contact</a></li>
+        <li><a href="{{ route('Alumno') }}">Alumno</a></li>
+    </ul>
         <main class="py-4">
             @yield('content')
         </main>
     </div>
-    <ul>
-        <li><a href="/public/">Home</a></li>
-        <li><a href="/public/about">About</a></li>
-        <li><a href="/public/contact">Contact</a></li>
-    </ul>
+    
 
 
 </body>

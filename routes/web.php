@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/about', 'HomeController@about')->name('about');
-Route::get('/contact', 'HomeController@contact')->name('contact');
+Route::get('/', 'HomeController@index')->name('Home');
+Route::get('/about', 'HomeController@about')->name('About');
+Route::get('/contact', 'HomeController@contact')->name('Contact');
 
 
 Auth::routes();
 
 
 Route::group(['prefix'=>'Alumno'],function(){
-    Route::get('index','AlumnoController@index');
+    Route::get('index','AlumnoController@index')->name('Alumno');
 });
