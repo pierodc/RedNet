@@ -19,4 +19,6 @@ Route::get('/contact', 'HomeController@contact')->name('contact');
 Auth::routes();
 
 
-
+Route::group(['prefix'=>'Alumno'],function(){
+    Route::get('index','AlumnoController@index');
+});
