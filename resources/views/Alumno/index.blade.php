@@ -3,12 +3,20 @@
 
 @section('content')
 
-<h1>Alumnos</h1>
+<h1>Cursos</h1>
 
 <ul>
-    @foreach ($AlumnoXCurso as $Al)
-        <li>{{ $Al->Alumno->Nombre1 }}</li>
+
+    @foreach ($Cursos as $Curso)
+    	@if (count($Curso->AlumnoXCurso) > 0)
+        <li>
+            <a href="{{ action('AlumnoController@ListadoAlumno' , ['id' => $Curso->id] ) }}">
+            {{ $Curso->NombreCompleto }} 
+            </a>
+        </li>
+        @endif
     @endforeach
+    
 </ul>
 
 @endsection

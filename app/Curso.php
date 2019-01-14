@@ -12,6 +12,5 @@ class Curso extends Model
     public function AlumnoXCurso(){
         return $this->hasMany('App\AlumnoXCurso');
     }
-    
-    
+ 
 }

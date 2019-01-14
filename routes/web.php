@@ -21,4 +21,6 @@ Auth::routes();
 
 Route::group(['prefix'=>'Alumno'],function(){
     Route::get('index','AlumnoController@index')->name('Alumno');
+    Route::get('Listado/{id}','AlumnoController@ListadoAlumno')->name('ListadoAlumno');
+    Route::get('ficha/{id}','AlumnoController@ficha')->name('fichaAlumno');
 });
